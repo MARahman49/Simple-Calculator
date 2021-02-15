@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Basic Calculator</title>
 	<link href="favicon.ico" rel="icon" type="image/x-icon" />
@@ -7,45 +8,47 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 	<form name="Calc">
 		<div class="calculator">
-		<div class="display">
+			<div class="display">
 				<input type="text" class="screen" name="Input" id="display" readonly>
+			</div>
+			<div class="keypad">
+				<p>
+					<input type="button" class="button" value="(" OnClick="Calc.Input.value += '('">
+					<input type="button" class="button" value=")" OnClick="Calc.Input.value += ')'">
+					<input type="button" class="button" value="%" OnClick="Calc.Input.value += '%'">
+					<input type="button" class="button" value="=" OnClick="Calc.Input.value = eval(Calc.Input.value)">
+				</p>
+				<p>
+					<input type="button" class="button" value="9" OnClick="Calc.Input.value += '9'">
+					<input type="button" class="button" value="8" OnClick="Calc.Input.value += '8'">
+					<input type="button" class="button" value="7" OnClick="Calc.Input.value += '7'">
+					<input type="button" class="button" value="/" OnClick="Calc.Input.value += '/'">
+				</p>
+				<p>
+					<input type="button" class="button" value="6" OnClick="Calc.Input.value += '6'">
+					<input type="button" class="button" value="5" OnClick="Calc.Input.value += '5'">
+					<input type="button" class="button" value="4" OnClick="Calc.Input.value += '4'">
+					<input type="button" class="button" value="*" OnClick="Calc.Input.value += '*'">
+				</p>
+				<p>
+					<input type="button" class="button" value="3" OnClick="Calc.Input.value += '3'">
+					<input type="button" class="button" value="2" OnClick="Calc.Input.value += '2'">
+					<input type="button" class="button" value="1" OnClick="Calc.Input.value += '1'">
+					<input type="button" class="button" value="-" OnClick="Calc.Input.value += '-'">
+				</p>
+				<p>
+					<input type=" button" class="button" value="CE" OnClick="Calc.Input.value = ''">
+					<input type="button" class="button" value="0" OnClick="Calc.Input.value += '0'">
+					<input type="button" class="button" value="." OnClick="Calc.Input.value += '.'">
+					<input type="button" class="button" value="+" OnClick="Calc.Input.value += ' + '">
+				</p>
+			</div>
 		</div>
-		<div class="keypad">
-			<p>
-				<input type="button" class="button" value="(" OnClick="Calc.Input.value += '('">
-				<input type="button" class="button" value=")" OnClick="Calc.Input.value += ')'">
-				<input type="button" class="button" value="%" OnClick="Calc.Input.value += '%'">
-				<input type="button" class="button" value="=" OnClick="Calc.Input.value = eval(Calc.Input.value)">
-			</p>
-			<p>
-				<input type="button" class="button" value="9" OnClick="Calc.Input.value += '9'">
-				<input type="button" class="button" value="8" OnClick="Calc.Input.value += '8'">
-				<input type="button" class="button" value="7" OnClick="Calc.Input.value += '7'">
-				<input type="button" class="button" value="/" OnClick="Calc.Input.value += '/'">
-			</p>
-			<p>
-				<input type="button" class="button" value="6" OnClick="Calc.Input.value += '6'">
-				<input type="button" class="button" value="5" OnClick="Calc.Input.value += '5'">
-				<input type="button" class="button" value="4" OnClick="Calc.Input.value += '4'">
-				<input type="button" class="button" value="*" OnClick="Calc.Input.value += '*'">
-			</p>
-			<p>
-				<input type="button" class="button" value="3" OnClick="Calc.Input.value += '3'">
-				<input type="button" class="button" value="2" OnClick="Calc.Input.value += '2'">
-				<input type="button" class="button" value="1" OnClick="Calc.Input.value += '1'">
-				<input type="button" class="button" value="-" OnClick="Calc.Input.value += '-">
-			</p>
-			<p>
-				<input type="button" class="button" value="CE" OnClick="Calc.Input.value = ''">
-				<input type="button" class="button" value="0" OnClick="Calc.Input.value += '0'">
-				<input type="button" class="button" value="." OnClick="Calc.Input.value += '.'">
-				<input type="button" class="button" value="+" OnClick="Calc.Input.value += ' + '">
-			</p>
-		</div>
-	</div>
 	</form>
 </body>
+
 </html>
